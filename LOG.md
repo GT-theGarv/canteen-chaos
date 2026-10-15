@@ -9,29 +9,24 @@ honestly still counts for something.
 Delete the example before you submit.
 
 
+### CC-10: "Sorting by price is backwards"
 
-## Example — delete this
+> "the sorting is now correct"
+>"changed the formula in the js"
 
-### CC-99 — "The cart total is wrong"
+### CC-02: "Can't read anything in dark mode"
 
-**Reproduced:** Added 2 dosas at Rs. 60 each. The cart showed
-Rs. 119.99999 instead of Rs. 130. Happened every time, on any dish with
-a price ending in .50.
+> "Changed the colour coding"
 
-**Cause:** The total was being added up with plain floating point and
-never rounded, so 0.1 + 0.2 style errors showed up on screen. The
-rounding helper existed but this one place was not using it.
+### CC-01 : "The search suggestions are behind everything"
 
-**Fix:** Ran the total through the existing rounding helper instead of
-adding a new one, so every price on screen goes through the same path.
+> "The search results are now visible"
+>"changed the CSS"
 
-**Checked:** Cart, checkout and the order screen all show Rs. 130 now.
-Prices without decimals still show without a trailing .00.
+### CC-08: "An old coupon still works"
 
-**Time:** about 40 minutes, most of it working out that the cart and the
-order screen round in different places.
-
-
+> "FRESHERS24 was last year's offer"
+> "added an if statement in js"
 
 ## CC-0X — "<the complaint, in short>"
 
